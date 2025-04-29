@@ -1,0 +1,426 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.header {
+    position: fixed;
+    background-color: white;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px; /* или сколько тебе нужно */
+    z-index:1; /* чтобы быть поверх всего */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.5); /* по желанию — тень снизу */
+    border-radius: 5px;
+}
+.web-name {
+    position: fixed;
+    font-family: Arial, sans-serif;
+    font-size: 35px;
+    top: 15px;
+    left: 25px;
+    color: #423831;
+    z-index: 2;
+}
+.line::after {
+    content: "";
+    position: fixed;
+    top: 75px;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: black; /* основной цвет линии */
+    border-top: 1px solid #fff;   /* свет сверху */
+    border-bottom: 1px solid #888; /* тень снизу */
+    box-sizing: border-box;
+}
+.home {
+    position: fixed;
+    left: 785px;
+    top: 17px;
+    width: 50px;
+    height: 50px;
+    z-index: 2;
+}
+#home-image {
+    position: fixed;
+    left: 790px;
+    top: 19px;
+    width: 40px;
+    height: 40px;
+}
+.products {
+    position: fixed;
+    left: 855px;
+    top: 17px;
+    width: 50px;
+    height: 50px;
+    z-index: 2;
+}
+#products-image {
+    position: fixed;
+    left: 815px;
+    top: -5px;
+    width: 130px;
+    height: 110px;
+}
+.categories {
+    position: fixed;
+    left: 930px;
+    top: 17px;
+    width: 50px;
+    height: 50px;
+    overflow: visible;
+    z-index: 2;
+}
+#categories-image {
+    position: fixed;
+    left: 905px;
+    top: 0px;
+    width: 100px;
+    height: 80px;
+}
+.why_us {
+    position: fixed;
+    left: 990px;
+    top: 17px;
+    width: 50px;
+    height: 50px;
+    z-index: 2;
+}
+#why-us_image {
+    position: fixed;
+    left: 1000px;
+    top: 23px;
+    width: 55px;
+    height: 40px;
+}
+.reviews {
+    position: fixed;
+    left: 1100px;
+    top: 25px;
+    width: 60px;
+    height: 60px;
+    z-index: 2;
+}
+#reviews-image {
+    position: fixed;
+    left: 1090px;
+    top: 30px;
+    width: 50px;
+    height: 30px;
+}
+.contact {
+    position: fixed;
+    left: 1140px;
+    top: 10px;
+    width: 50px;
+    height: 50px;
+    z-index: 2;
+}
+#contact-image {
+    position: fixed;
+    left: 1140px;
+    top: 10px;
+    width: 130px;
+    height: 65px;
+}
+#arrow-image {
+    position: fixed;
+    left: 1000px;
+    top: 200px;
+    width: 450px;
+    height: 250px;
+    display: none;
+}
+.test {
+    position: absolute;
+    color: red;
+    top: 2000px;
+    left: 500px;
+}
+
+.content-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 170px;
+    margin-top: 150px;
+    padding: 0 20px;
+}
+
+.text-side {
+    max-width: 450px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.main-text {
+    text-transform: uppercase;
+    font-size: 40px;
+    font-family: Arial, sans-serif;
+    color: #423831;
+}
+
+.text {
+    font-family: Arial, sans-serif;
+    font-size: 17px;
+    color: #423831;
+}
+
+.image-side {
+    position: relative;
+    width: 350px;
+    height: 350px;
+    overflow: hidden;
+}
+
+/* фон */
+#beans-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+.coffee-pack {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 120px;
+    pointer-events: none;
+}
+
+.menu {
+    display: none;
+}
+
+.products-section {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    width: 1000px;
+    background-color: #f5f5f5;
+    height: 650px;
+    margin-left: 10vw;
+    margin-top: 5vh;
+    border-radius: 15px;
+    gap: 30px;
+    padding: 40px 20px;
+    align-items: center;
+}
+.products-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;  /* Чтобы карточки переносились, когда не помещаются */
+    justify-content: space-around; /* Распределяет карточки по горизонтали */
+}
+.main-name {
+    position: relative; /* НЕ absolute */
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-size: 40px;
+    text-transform: uppercase;
+    color: #080f4f;
+}
+.product-1{
+    position: relative;
+    background-color: white;
+    width: 300px;
+    height: 400px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.white-title {
+    position: relative;
+    font-family: Arial, sans-serif;
+    font-size: 24px;
+    text-transform: uppercase;
+    margin-left: 15px;
+    margin-top: 2%;
+    color: #423831;
+}
+#white-image {
+    position: relative;
+    overflow: hidden;
+    height: 130px;
+    width: 310px;
+    border-radius: 10px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+.white-text {
+    position: absolute;
+    top: 65%;
+    left: 45%;
+    transform: translate(-65%, -45%); /*для правильной позиции*/
+    font-family: Arial, sans-serif;
+    color: #423831;
+    font-size: 15px;
+}
+#white-image:hover {
+    transform: scale(1.1);
+}
+#white-stars {
+    position: absolute;
+    width: 200px;
+    height: 100px;
+    top: 330px;
+    left: 0;
+}
+.white-price {
+    position: absolute;
+    top: 22%;
+    left: 5%;
+    transform: translate(-22%, -5%); /*для правильной позиции*/
+    width: 40px;
+    height: 30px;
+    background-color: #080f4f;
+    color: white;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.product-2 {
+    position: relative;
+    background-color: white;
+    width: 300px;
+    height: 400px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+#black-image {
+    position: absolute;
+    width: 310px;
+    height: 130px;
+    object-fit: cover;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+#black-image:hover {
+    transform: scale(1.1);
+}
+.black-title {
+    position: relative;
+    font-family: Arial, sans-serif;
+    font-size: 24px;
+    text-transform: uppercase;
+    margin-left: 15px;
+    margin-top: 140px;
+    color: #423831;
+}
+.black-text {
+    position: absolute;
+    top: 180px;
+    left: 25px;
+    color: #423831;
+    max-width: 150px;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+}
+.black-price {
+    position: absolute;
+    width: 40px;
+    height: 30px;
+    top: 85px;
+    left: 10px;
+    background-color: #080f4f;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+#black-stars {
+    position: absolute;
+    width: 200px;
+    height: 100px;
+    top: 330px;
+    left: 0;
+}
+.product-3 {
+    position: relative;
+    width: 300px;
+    height: 400px;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+}
+#ground-image {
+    position: absolute;
+    width: 310px;
+    height: 130px;
+    object-fit: cover;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+#ground-image:hover {
+    transform: scale(1.1);
+}
+.ground-title {
+    position: relative;
+    font-family: Arial, sans-serif;
+    font-size: 24px;
+    text-transform: uppercase;
+    margin-left: 15px;
+    margin-top: 140px;
+    color: #423831;
+}
+.ground-text {
+    position: absolute;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    color: #423831;
+    max-width: 150px;
+    top: 180px;
+    left: 25px;
+}
+.ground-price {
+    position: absolute;
+    width: 40px;
+    height: 30px;
+    top: 85px;
+    left: 10px;
+    background-color: #080f4f;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+#ground-stars {
+    position: absolute;
+    width: 200px;
+    height: 100px;
+    top: 330px;
+    left: 0;
+}
+
+@media screen and (max-width: 786px) {
+    .products-section {
+        width: 535px;
+        height: auto; /* Убираем фиксированную высоту */
+        margin-left: 3vw; /* Уменьшаем отступ слева */
+        padding: 20px 10px; /* Уменьшаем отступы */
+        display: flex;
+        flex-direction: column; /* Располагаем элементы по вертикали */
+        align-items: center; /* Центрируем карточки по горизонтали */
+        /* flex-direction: column; Карточки по вертикали на мобильных */
+    }
+
+    .product-1, .product-2, .product-3 {
+        width: 50%; /* Устанавливаем ширину карточек так, чтобы они помещались в один ряд */
+        margin: 10px 0; /* Отступы между карточками */
+    }
+
+    .main-name {
+        font-size: 30px; /* Уменьшаем размер текста на мобильных */
+    }
+}
